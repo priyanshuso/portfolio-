@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyanshu Soni | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
+
+    .bg-gradient-mesh {
+      background-color: #0f172a;
+      background-image: 
+        radial-gradient(at 0% 0%, #1e3a8a 0, transparent 50%),
+        radial-gradient(at 100% 100%, #6d28d9 0, transparent 50%);
+    }
+
+    .glow {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, #6366f1, #a855f7);
+      filter: blur(120px);
+      opacity: 0.5;
+      border-radius: 50%;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-mesh text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full top-0 z-50 glass">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl">Priyanshu<span class="text-blue-500">.</span></h1>
+    <div class="space-x-6 text-sm">
+      <a href="#skills" class="hover:text-blue-400">Skills</a>
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#experience" class="hover:text-blue-400">Experience</a>
+      <a href="#certifications" class="hover:text-blue-400">Certificates</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center pt-20">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 px-6 items-center">
+
+    <div>
+      <h2 class="text-blue-400 uppercase text-sm mb-2">Available for internships, jobs</h2>
+      <h1 class="text-5xl font-bold leading-tight">
+        Hi, I am <br>
+        <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Priyanshu Soni</span>
+      </h1>
+
+      <p class="text-lg mt-4 text-gray-300 h-8">
+        <span id="typing" class="border-r-2 border-blue-400 pr-1"></span>
+      </p>
+
+      <p class="text-gray-400 mt-6 max-w-lg">
+        Data Science student skilled in C++, Python, SQL and frontend  development.
+      </p>
+
+      <div class="mt-8 flex gap-4">
+        <a href="#projects" class="px-6 py-2 bg-blue-600 rounded hover:bg-blue-700">View Work</a>
+        <a href="resume.pdf" download class="px-6 py-2 border rounded hover:border-blue-400">Resume</a>
+      </div>
+    </div>
+
+    <div class="relative flex justify-center">
+      <div class="glow"></div>
+      <img src="me.jpeg" alt="profile" class="relative w-72 h-72 object-cover rounded-full border-2 border-white/10" />
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 text-center">
+  <h2 class="text-3xl font-bold mb-8 text-transparent bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text">Technical Expertise</h2>
+  <div class="flex flex-wrap justify-center gap-4">
+    <span class="glass px-4 py-2 rounded">C++</span>
+    <span class="glass px-4 py-2 rounded">Python</span>
+    <span class="glass px-4 py-2 rounded">SQL</span>
+    <span class="glass px-4 py-2 rounded">Power BI</span>
+    <span class="glass px-4 py-2 rounded">Django</span>
+    <span class="glass px-4 py-2 rounded">DSA with c++</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+    <div class="glass p-6 rounded hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">Medi Alter – Smart Accident Detection System</h3>
+      <p class="text-gray-400 text-sm mb-3">Built a real-time accident detection system using Arduino, ADXL345, GPS (Neo-6M), and GSM (SIM800L).</p>
+      <ul class="text-gray-400 text-sm space-y-1">
+        <li>• Detects crashes using accelerometer</li>
+        <li>• Sends emergency SMS with live coordinates</li>
+        <li>• Auto-calls emergency contact if not canceled within 30 seconds</li>
+        <li>• Presented at Srijan (State-Level Tech Competition)</li>
+      </ul>
+    </div>
+
+    <div class="glass p-6 rounded hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">Bus Tracking System – SIH Internal</h3>
+      <p class="text-gray-400 text-sm mb-3">Developed a college bus tracking system for Smart India Hackathon (Internal Round).</p>
+      <ul class="text-gray-400 text-sm space-y-1">
+        <li>• Real-time bus location tracking</li>
+        <li>• Student login and route management</li>
+        <li>• Driver information system</li>
+        <li>• Improved safety and operational efficiency</li>
+      </ul>
+    </div>
+
+    <div class="glass p-6 rounded hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">Faculty Bonus & Feedback System</h3>
+      <p class="text-gray-400 text-sm mb-3">Designed a system in C language to collect faculty feedback and manage bonus distribution.</p>
+      <ul class="text-gray-400 text-sm space-y-1">
+        <li>• Feedback collection system</li>
+        <li>• Bonus calculation logic</li>
+        <li>• Structured menu-driven interface</li>
+      </ul>
+    </div>
+
+    <div class="glass p-6 rounded hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">Car Parking System</h3>
+      <p class="text-gray-400 text-sm mb-3">Developed a C++ based parking management system.</p>
+      <ul class="text-gray-400 text-sm space-y-1">
+        <li>• Automated vehicle entry and exit</li>
+        <li>• Parking slot tracking</li>
+        <li>• Menu-driven system design</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-20 px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Work Experience</h2>
+
+  <div class="max-w-3xl mx-auto glass p-6 rounded-lg">
+    <h3 class="text-xl font-bold">InternPe</h3>
+    <p class="text-blue-400 text-sm">AI/ML Intern | May 2025 - June 2025</p>
+    <ul class="text-gray-400 mt-4 space-y-2 text-sm">
+      <li>• Built and experimented with basic Machine Learning models</li>
+      <li>• Worked on real-world datasets and data preprocessing</li>
+      <li>• Strengthened understanding of AI/ML concepts</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="py-20 px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Certifications</h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="Oracle Certified Data Science Professional – Oracle.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">Oracle Certified Data Science Professional –Oracle</p>
+    </div>
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="Advanced Software Engineering Job Simulation – Walmart (Forage).jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">Advanced Software Engineering</p>
+    </div>
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="AWS Solutions Architecture Job Simulation – Forage.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">AWS Solutions Architecture</p>
+    </div>
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="Pythan for data science (NPTEL).jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">Python for Data Science –NPTEL</p>
+    </div>
+
+     <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="sql intermidate.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">SQL (Intermediate) – HackerRank</p>
+    </div>
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="Power bi.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">Power BI Workshop – OfficeMaster</p>
+    </div>
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="AI for Techies.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">Python Using AI – AI for Techies</p>
+    </div>
+    
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="sql basic.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">SQL (Basic) – HackerRank</p>
+    </div>
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="CSS basic.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300">CSS basic </p>
+    </div>
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="CSS properties.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300"> CSS Properties</p>
+    </div>
+
+    <div class="glass p-4 rounded cursor-pointer" onclick="openModal('cert_sql_basic.jpg')">
+      <img src="c++ programming.jpeg" class="rounded mb-3" />
+      <p class="text-sm text-gray-300"> C++ Programming (Alison)</p>
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="py-20 text-center">
+  <h2 class="text-3xl font-bold mb-6">Contact</h2>
+  <p>Email: Priyanshu8115soni@gmail.com</p>
+  <p>mobile no. : 9555964902</p>
+  <p class="mb-6">Bhopal, India</p>
+
+  <div class="flex justify-center gap-6">
+    <a href="https://github.com/priyanshuso" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/priyanshusoni95/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+  <span onclick="closeModal()" class="absolute top-5 right-8 text-white text-3xl cursor-pointer">&times;</span>
+  <img id="modalImg" class="max-w-4xl rounded" />
+</div>
+
+<footer class="text-center py-6 text-gray-500">
+  © 2026 Priyanshu Soni
+</footer>
+
+<script>
+const words = ["Python Developer.", "Problem Solver.", "Data Analyst."];
+let i = 0, j = 0, isDeleting = false;
+
+function type() {
+  let current = words[i];
+  let el = document.getElementById("typing");
+
+  if (isDeleting) {
+    el.textContent = current.substring(0, j--);
+  } else {
+    el.textContent = current.substring(0, j++);
+  }
+
+  if (!isDeleting && j === current.length) {
+    isDeleting = true;
+    setTimeout(type, 1200);
+    return;
+  }
+
+  if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % words.length;
+  }
+
+  setTimeout(type, isDeleting ? 50 : 100);
+}
+
+window.onload = () => {
+  j = 0;
+  type();
+};
+
+// modal functions
+function openModal(src) {
+  document.getElementById('modal').classList.remove('hidden');
+  document.getElementById('modalImg').src = src;
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.add('hidden');
+}
+</script>
+
+</body>
+</html>
